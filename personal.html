@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+    <link rel="stylesheet" href="personal.css">
+    <style>
+        .color-change{
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+          <ul>
+            <button><li><a href="index.html">BACK</a></li></button>
+            
+    
+          </ul>
+        </nav>
+    </div>
+</div>
+<div class="button">
+    <button onclick="theme()">Click Me!</button>
+</div>
+     <center><table border="2" >
+            <tr>
+                <td colspan="2">
+                    <h1><center>PERSONAL INFORMATION</center></h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <h2><b>Name: Susan Shakya</b></h2>
+                            <p>I am Susan Shakya. I am 18 years old. I am currently studying at Herald College. I am at level 4 and this my first semester. I live in Nayabazaar, Kathmandu. I passed my SEE from Rosebud School. And I passed my +2 from NCCS. </p>
+                        <h3><b> Hobbies are:</b></h3>
+                        <P><dl>
+                            <li>Basketball</li>
+                            <li>Football</li>
+                            <li>Singing</li>
+                            <li>Arts and drawing</li>
+                        </dl></P>
+                        <h3><b> Interests are:</b></h3>
+                        <p><dl>
+                            <li>AI</li>
+                            <li>Game Development</li>
+                            <li>Web Development</li>
+                            <li>Software Development</li>
+                         </dl></p>
+                </td>
+            </tr>
+            </tr>
+            </table></center>
+
+    <script>
+        function theme(){
+            var element = document.body;
+            element.classList.toggle("color-change");
+        }
+    </script>
+</body>
+</html>
+

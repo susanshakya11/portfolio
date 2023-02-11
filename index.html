@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://kit.fontawesome.com/27cdf04a9f.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="image/de.png" class="me">
+      <ul>
+        <li></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="contacts.html">CONTACTS</a></li>
+        <i class="fa-regular fa-circle-xmark"></i>
+      </ul>
+      <i class="fa-solid fa-bars"></i>
+    </nav>
+    <br>
+    <div class="header-text">
+      <h1> HELLO<br> WELCOME TO MY PORTFOLIO</h1>
+    </div>
+    
+
+    </div>
+    
+  </div>
+    <div id="portfolio">
+    <div class="twoHalfLayout">
+        <table>
+        <div class="left-column">
+          <div class="inner-content">
+            <div class="heading-primary">
+              <center> <h1>MY PORTFOLIO</h1></center>
+            </div>
+            <div class="secondary-head">
+            <!-- .heading-primary -->
+            <br>
+            <p> <b>Name: Susan Shakya</b></p>
+            <br>
+             <!-- Personal Information -->
+             <p>Personal Information</p>
+             <button class="primary-button">
+              <a href="personal.html">Click Here</a>
+            </button>
+            <br>
+          </p>
+            
+            <!-- Skills and Attributes -->
+            <p>Skills and Attributes</p>
+            <button class="primary-button">
+                <a href="skills.html">Click Here</a>
+            </button></p>
+            <br>
+            <!-- Education and Training -->
+            <p>Education</p>
+            <button class="primary-button">
+                <a href="education.html">Click Here</a>
+            </button>
+            <br>
+            <!-- Recommendations -->
+            <div class="Recommendations">
+              <div class="container">
+                <div class="row">
+                  <div class="column1">
+                    <h1 class="sub-title">Recommendations</h1>
+                    <div class="tab-titles">
+                      <p class="tab-links active-link" onclick="opentab('click')">Recommendation#1</p>
+                      <p class="tab-links" onclick="opentab('touch')">Recommendation#2</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="click">
+                      <ul>
+                        <li><span>Sujita Shrestha</span><br>CEO - Bhairab Technology</li>
+                      </ul>
+                    </div>
+                    <div class="tab-contents" id="touch">
+                      <ul>
+                        <li><span>Aman Maharjan</span><br>Managing Director-Elscript Technology</li>
+                      </ul>
+                      
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            </div>
+
+          </div>
+        
+          <!-- @end .inner-content -->
+        </div>
+        <!-- @end .left-column -->
+      <div class="right-column">
+        <figure>
+          <img src="image/photo2.jpg" alt="img"/>
+        </figure>
+      </div>
+      <!-- @end .right-column -->
+      </table>
+    </div>
+    <!-- .twoHalfLayout -->
+    <a href="#" class="to-top">
+      <i class="up"><p>^</p></i>
+    </a>
+  </div>
+
+    <script src="index.js"></script>
+    <script>
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");//activetablink
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+   
+    </body>
+</html>

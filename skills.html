@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills and Attributes</title>
+    <link rel="stylesheet" href="skills.css">
+        <select onchange="color(this.value)">
+        <option value="color">color</option>
+        <option value="red">red</option>
+        <option value="green">green</option>
+        <option value="aqua">aqua</option>
+    </select>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+          <nav>
+          <ul>
+            <button><li><a href="index.html">BACK</a></li></button>
+            
+    
+          </ul>
+        </nav>
+    </div>
+</div>
+
+     <center><table border="2" >
+            <tr>
+                <td colspan="2">
+                    <h1><center>SKILLS AND ATTRIBUTES</center></h1>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                        <h2><b> My Skills are:</b></h2>
+                        <P><dl>
+                            <li>Critical Thinking</li>
+                            <li>Project Management</li>
+                            <li>Public Speaking</li>
+                            <li>Leadership</li>
+                            <li>Team Work</li>
+                            <li>Web Development</li>
+                            <li>Software Development</li>
+                            <li>Creativity</li>
+                         </dl></p>
+                </td>
+            </tr>
+            </tr>
+            </table></center>
+
+    <script>
+        console.log("hello");
+        function color(value){
+            document.body.style.backgroundColor=value;
+            
+        }
+    </script>
+</body>
+</html>
+
